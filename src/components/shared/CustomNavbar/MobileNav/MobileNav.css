@@ -1,0 +1,9 @@
+.menu-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.8s ease-out; /* Adjust timing as needed */
+}
+
+.menu-container.open {
+  max-height: 600px; /* A max-height value larger than the expected height of the menu */
+}

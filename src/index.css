@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Color Variables */
+    --mainBrown: theme(colors.mainBrown);
+    --mainDark: theme(colors.mainDark);
+    --mainGold: theme(colors.mainGold);
+
+    /* Font Size Variables */
+    --mainFontSize: 18px; /* Default font size for base screens */
+    --numbersFontSize: 55px;
+    --xxlFontSize: 52px;
+    --xlFontSize: 32px;
+    --lgFontSize: 24px;
+    --xsFontSize: 12px;
+  }
+
+  @font-face {
+    font-family: "Acumin Variable Concept";
+    src: url("/fonts/acumin.ttf") format("ttf"),
+      url("/fonts/acumin.ttf") format("ttf");
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+  /* Base Global Styles */
+  * {
+    color: var(--mainDark);
+    font-size: var(--mainFontSize); /* Default font size */
+  }
+
+  /* Responsive Font Sizes */
+  .custom-text-numbers {
+    font-size: var(--numbersFontSize);
+  }
+  .custom-text-xxl {
+    font-size: var(--xxlFontSize);
+  }
+  .custom-text-xl {
+    font-size: var(--xlFontSize);
+  }
+  .custom-text-lg {
+    font-size: var(--lgFontSize);
+  }
+  .custom-text-xs {
+    font-size: var(--xsFontSize);
+  }
+
+  /* Screen-Specific Adjustments */
+  @media (max-width: 540px) {
+    :root {
+      --mainFontSize: 16px;
+      --numbersFontSize: 40px;
+      --xxlFontSize: 30px;
+      --xlFontSize: 24px;
+      --lgFontSize: 18px;
+      --xsFontSize: 10px;
+    }
+  }
+
+  @screen md {
+    :root {
+      --mainFontSize: 17px;
+      --numbersFontSize: 50px;
+      --xxlFontSize: 40px;
+      --xlFontSize: 28px;
+      --lgFontSize: 20px;
+    }
+  }
+
+  @screen lg {
+    :root {
+      --mainFontSize: 18px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    :root {
+      --mainFontSize: 18px;
+      --numbersFontSize: 55px;
+      --xxlFontSize: 52px;
+      --xlFontSize: 32px;
+      --lgFontSize: 24px;
+    }
+  }
+}

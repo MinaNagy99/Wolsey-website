@@ -1,0 +1,8 @@
+.line1 {
+  transition: 1s ease;
+}
+.line1:hover {
+  background-color: black;
+  transform: translateX(50px);
+  transition: 1s ease;
+}
