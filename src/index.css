@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--mainDark);
+  font-size: var(--mainFontSize); /* Default font size */
+}
 @layer base {
   :root {
     /* Color Variables */
@@ -10,7 +17,7 @@
     --mainGold: theme(colors.mainGold);
 
     /* Font Size Variables */
-    --mainFontSize: 18px; /* Default font size for base screens */
+    --mainFontSize: 16px; /* Default font size for base screens */
     --numbersFontSize: 55px;
     --xxlFontSize: 52px;
     --xlFontSize: 32px;
@@ -24,12 +31,6 @@
       url("/fonts/acumin.ttf") format("ttf");
     font-weight: 100 900;
     font-style: normal;
-  }
-
-  /* Base Global Styles */
-  * {
-    color: var(--mainDark);
-    font-size: var(--mainFontSize); /* Default font size */
   }
 
   /* Responsive Font Sizes */
