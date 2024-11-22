@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia/SocialMedia";
 function Footer() {
   return (
     <>
-      <div className="grid md:grid-cols-10 grid-cols-1 p-5 gap-y-5 bg-mainGray text-white">
+      <div className="grid md:grid-cols-10 grid-cols-1 p-5 gap-y-5 bg-mainGray">
         <div className="md:col-span-2 col-span-1 flex justify-center ">
           <img className="object-contain px-8" src="/images/logo.png" alt="" />
         </div>
