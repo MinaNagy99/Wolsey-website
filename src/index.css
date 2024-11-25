@@ -85,6 +85,11 @@ body {
       --xxlFontSize: 52px;
       --xlFontSize: 32px;
       --lgFontSize: 24px;
+      --mainFontSize: 17px;
+      --numbersFontSize: 50px;
+      --xxlFontSize: 40px;
+      --xlFontSize: 28px;
+      --lgFontSize: 20px;
     }
   }
 }
