@@ -12,7 +12,7 @@ function TextWithImg({ data }) {
               <img className="w-full h-full object-cover " src={img} alt="" />
             </div>
             <div
-              className={`md:col-span-3 col-span-1 flex flex-col justify-center md:ps-11 ps-5 py-10 bg-${bgColor}`}
+              className={`md:col-span-3 col-span-1 flex flex-col justify-center px-11 py-10 bg-${bgColor}`}
             >
               <CustomParagraph data={data} />
             </div>
@@ -20,12 +20,12 @@ function TextWithImg({ data }) {
         ) : (
           <>
             <div
-              className={`md:col-span-3 col-span-1 flex flex-col justify-center md:ps-11 ps-5 py-10 bg-${bgColor}`}
+              className={`md:col-span-3 col-span-1 flex flex-col justify-center px-11 py-10 bg-${bgColor}`}
             >
               <CustomParagraph data={data} />
             </div>
             <div className=" col-span-1">
-              <img className="w-full h-full object-cover " src={img} alt="" />
+              <img className="w-full  object-cover " src={img} alt="" />
             </div>
           </>
         )}

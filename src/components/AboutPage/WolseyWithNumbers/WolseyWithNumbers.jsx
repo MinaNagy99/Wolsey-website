@@ -39,7 +39,7 @@ function WolseyInNumbers() {
   ];
   return (
     <>
-      <div className="bg-[url('/about/numbers.webp')] mt-3 bg-cover bg-center relative py-10 ">
+      <div className="bg-[url('/about/numbers.webp')]  bg-cover bg-center relative py-10 ">
         <p className="custom-text-xl text-white text-center ">
           WOLSEY STRUCTURAL ENGINEERING IN NUMBERS
         </p>

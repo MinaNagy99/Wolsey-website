@@ -20,7 +20,7 @@ function Vision() {
       },
     },
     normalText: [
-      "of the built environment through pioneering, sustainable, and aesthetically compelling solutions that redefine modern construction.",
+      "shaping the future of-the-built environment through pioneering, sustainable, and aesthetically compelling solutions that redefine modern construction.",
     ],
   };
   return (
