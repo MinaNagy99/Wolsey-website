@@ -13,27 +13,27 @@ function WolseyInNumber() {
     },
     {
       name: "Wolsey’s full team",
-      number: useCountUp(20, inView),
+      number: useCountUp(20, inView,2000),
       icon: "+",
     },
     {
       name: "Clients",
-      number: useCountUp(100, inView),
+      number: useCountUp(100, inView,10000),
       icon: "+",
     },
     {
       name: "Recurring clients",
-      number: useCountUp(40, inView),
+      number: useCountUp(40, inView,4000),
       icon: "%",
     },
     {
       name: "Countries",
-      number: useCountUp(10, inView),
+      number: useCountUp(10, inView,1000),
       icon: "+",
     },
     {
       name: "Projects",
-      number: useCountUp(3000, inView),
+      number: useCountUp(3000, inView,70000),
       icon: "+",
     },
   ];

@@ -15,7 +15,7 @@ function WhoWeArePage() {
     if (ref.current) {
       const offsetTop = ref.current.offsetTop;
       window.scrollTo({
-        top: offsetTop - 100, // Adjust for 50px offset
+        top: offsetTop - 100,
       });
     }
   };

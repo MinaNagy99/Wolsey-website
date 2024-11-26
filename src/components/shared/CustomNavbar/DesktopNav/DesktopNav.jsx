@@ -18,7 +18,43 @@ function DesktopNav() {
   };
   return (
     <>
-      <div className="flex">
+      {/* <Link
+        to="/who-we-are"
+        onClick={(e) => {
+          if (e.defaultPrevented) return; // If a child element handled the event, don't navigate
+        }}
+      >
+        who we are
+        <p
+          onClick={(e) => {
+            e.stopPropagation(); // Stop propagation to parent
+            e.preventDefault(); // Prevent <Link> navigation
+            handleNavigate("/who-we-are", "about");
+          }}
+        >
+          about
+        </p>
+        <p
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            handleNavigate("/who-we-are", "mission");
+          }}
+        >
+          mission
+        </p>
+        <p
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            handleNavigate("/who-we-are", "vision");
+          }}
+        >
+          vision
+        </p>
+      </Link> */}
+
+      <div className="flex ">
         {navbarList.map(({ name, list, path }, index) => (
           <Link
             to={path.page}
@@ -30,7 +66,7 @@ function DesktopNav() {
               setVisibleDropdownIndex(null);
               setVisibleProjects(false);
             }}
-            className="xl:text-lg text-sm xl:mx-5 mx-1 relative hover:bg-mainBrown  xl:p-5  p-2 cursor-pointer  hover:text-white"
+            className="xl:text-lg text-sm xl:mx-2 md:mx-2 mx-1 relative hover:bg-mainBrown  xl:p-5   p-2 cursor-pointer  hover:text-white"
           >
             <div
               className={`absolute top-[100%] left-0 min-w-max bg-mainBrown !text-white ${
@@ -43,8 +79,6 @@ function DesktopNav() {
                     <div
                       onClick={(e) => {
                         e.stopPropagation();
-                        console.log(`path section on click ${path.section}`);
-
                         handleNavigate(path.page, path.section);
                       }}
                     >

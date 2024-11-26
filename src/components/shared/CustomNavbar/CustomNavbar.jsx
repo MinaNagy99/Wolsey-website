@@ -18,7 +18,7 @@ function CustomNavbar() {
   }, []);
   return (
     <div className="fixed top-0 left-0 right-0 z-40 bg-white">
-      <div className="flex justify-around items-center md:py-5 py-2 shadow-2xl">
+      <div className="flex justify-around items-center  py-1 shadow-2xl">
         <Link to="/" className="lg:w-[12%] w-[20%]">
           <img className="" src="/images/logo.jpg" alt="Logo" />
         </Link>

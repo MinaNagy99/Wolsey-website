@@ -65,6 +65,7 @@ function NavbarContaxtProvider({ children }) {
     { name: "Contact us", path: { page: "/contact-us", section: "engineers" } },
   ];
   return (
+    
     <navbarContext.Provider
       value={{
         projectsName,
