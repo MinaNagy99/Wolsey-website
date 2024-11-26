@@ -32,11 +32,10 @@ function ManagementPage() {
     }
     if (location.state?.scrollTo === "engineers") {
       console.log("engineer");
-      
-      scrollToSection(engineersRef);
 
+      scrollToSection(engineersRef);
     }
-  }, [Location]);
+  }, [location]);
   return (
     <>
       <div ref={firstSectionRef}>

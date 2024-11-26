@@ -18,46 +18,15 @@ function DesktopNav() {
   };
   return (
     <>
-      {/* <Link
-        to="/who-we-are"
-        onClick={(e) => {
-          if (e.defaultPrevented) return; // If a child element handled the event, don't navigate
-        }}
-      >
-        who we are
-        <p
-          onClick={(e) => {
-            e.stopPropagation(); // Stop propagation to parent
-            e.preventDefault(); // Prevent <Link> navigation
-            handleNavigate("/who-we-are", "about");
-          }}
-        >
-          about
-        </p>
-        <p
-          onClick={(e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            handleNavigate("/who-we-are", "mission");
-          }}
-        >
-          mission
-        </p>
-        <p
-          onClick={(e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            handleNavigate("/who-we-are", "vision");
-          }}
-        >
-          vision
-        </p>
-      </Link> */}
-
       <div className="flex ">
         {navbarList.map(({ name, list, path }, index) => (
-          <Link
-            to={path.page}
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              console.log("method one");
+
+              handleNavigate(path.page, path.section);
+            }}
             key={index}
             onMouseEnter={() => {
               setVisibleDropdownIndex(index);
@@ -78,6 +47,7 @@ function DesktopNav() {
                   <React.Fragment key={itemIndex}>
                     <div
                       onClick={(e) => {
+                        console.log("method two");
                         e.stopPropagation();
                         handleNavigate(path.page, path.section);
                       }}
@@ -119,7 +89,7 @@ function DesktopNav() {
             {list && (
               <i className="fa-solid text-mainGold fa-caret-down ms-2"></i>
             )}
-          </Link>
+          </div>
         ))}
       </div>
     </>

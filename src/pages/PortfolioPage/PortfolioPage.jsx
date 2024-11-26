@@ -13,7 +13,7 @@ function PortfolioPage() {
     if (ref.current) {
       const offsetTop = ref.current.offsetTop;
       window.scrollTo({
-        top: offsetTop - 50, // Adjust for 50px offset
+        top: offsetTop - 100, // Adjust for 50px offset
       });
     }
   };
@@ -21,7 +21,7 @@ function PortfolioPage() {
     if (location.state?.scrollTo === "solutions") {
       scrollToSection(solutions);
     }
-  }, [Location]);
+  }, [location]);
   return (
     <>
       <PortfolioPoster />

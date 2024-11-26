@@ -28,11 +28,11 @@ function NavbarContaxtProvider({ children }) {
         { name: "Mission", path: { page: "/who-we-are", section: "mission" } },
         { name: "Vision", path: { page: "/who-we-are", section: "vision" } },
       ],
-      path: { page: "/who-we-are#top", section: "about" },
+      path: { page: "/who-we-are", section: "about" },
     },
     {
       name: "Management team",
-      path: { page: "/management#top", section: "firstSection" },
+      path: { page: "/management", section: "firstSection" },
       list: [
         {
           name: "Founder's Experience and Vision",
@@ -50,7 +50,10 @@ function NavbarContaxtProvider({ children }) {
       name: "Portfolio",
       path: { page: "/portfolio", section: "engineers" },
       list: [
-        { name: "Our structural engineering solutions" },
+        {
+          name: "Our structural engineering solutions",
+          path: { page: "/portfolio", section: "solutions" },
+        },
         { name: "Our Projects" },
       ],
     },
@@ -65,7 +68,6 @@ function NavbarContaxtProvider({ children }) {
     { name: "Contact us", path: { page: "/contact-us", section: "engineers" } },
   ];
   return (
-    
     <navbarContext.Provider
       value={{
         projectsName,

@@ -29,7 +29,7 @@ function WhoWeArePage() {
     if (location.state?.scrollTo === "vision") {
       scrollToSection(visionRef);
     }
-  }, [Location]);
+  }, [location]);
   return (
     <>
       <div className="mt-28">

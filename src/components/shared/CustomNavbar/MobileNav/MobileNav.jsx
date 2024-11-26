@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { navbarContext } from "../../../../context/navbarContaxt";
 import "./MobileNav.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function MobileNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,11 @@ function MobileNav() {
     setVisibleDropdownIndex,
     visibleDropdownIndex,
   } = useContext(navbarContext);
+  const navigate = useNavigate();
 
+  const handleNavigate = (pageName, section) => {
+    navigate(pageName, { state: { scrollTo: section } });
+  };
   return (
     <>
       <i
@@ -27,20 +31,32 @@ function MobileNav() {
       >
         {navbarList.map(({ name, list, path }, index) => (
           <div
-            key={index}
-            onClick={() => {
-              if (visibleDropdownIndex == null) {
-                setVisibleDropdownIndex(index);
-              } else {
-                setVisibleDropdownIndex(null);
-                setVisibleProjects(false);
-              }
+            onClick={(e) => {
+              console.log("method navigate one ");
+
+              e.stopPropagation();
+              handleNavigate(path.page, path.section);
+              setIsMenuOpen(false);
             }}
+            key={index}
             className="relative hover:bg-blend-normal p-2 text-white"
           >
             {name}
             {list && (
-              <i className="fa-solid text-mainGold fa-caret-down ms-2"></i>
+              <i
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log("method visible");
+
+                  if (visibleDropdownIndex == null) {
+                    setVisibleDropdownIndex(index);
+                  } else {
+                    setVisibleDropdownIndex(null);
+                    setVisibleProjects(false);
+                  }
+                }}
+                className="fa-solid text-mainGold fa-caret-down ms-2"
+              ></i>
             )}
             <div
               className={`absolute top-full left-0 w-full bg-mainBrown text-white transition-all duration-300 ${
@@ -48,7 +64,7 @@ function MobileNav() {
               }`}
             >
               {list &&
-                list.map(({ name }, itemIndex) => (
+                list.map(({ name, path }, itemIndex) => (
                   <div
                     key={itemIndex}
                     className="p-3 hover:bg-mainDark  text-white"
@@ -59,9 +75,19 @@ function MobileNav() {
                       }
                     }}
                   >
-                    <Link to={path}>{name}</Link>
+                    <div
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleNavigate(path.page, path.section);
+                        setIsMenuOpen(false);
+
+                        console.log("navigate to spasifc list ");
+                      }}
+                    >
+                      {name}
+                    </div>
                     {name === "Our Projects" && (
-                      <i className="fa-solid ms-2 text-mainGold fa-caret-right"></i>
+                      <i className="fa-solid ms-2 text-mainGold fa-caret-right hidden"></i>
                     )}
                     {name === "Our Projects" && (
                       <div
