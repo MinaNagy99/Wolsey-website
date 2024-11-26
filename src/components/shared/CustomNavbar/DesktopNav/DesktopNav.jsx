@@ -66,7 +66,7 @@ function DesktopNav() {
               setVisibleDropdownIndex(null);
               setVisibleProjects(false);
             }}
-            className="xl:text-lg text-sm xl:mx-2 md:mx-2 mx-1 relative hover:bg-mainBrown  xl:p-5   p-2 cursor-pointer  hover:text-white"
+            className=" text-sm xl:mx-2 md:mx-2 mx-1 relative hover:bg-mainBrown  xl:p-5   p-2 cursor-pointer  hover:text-white"
           >
             <div
               className={`absolute top-[100%] left-0 min-w-max bg-mainBrown !text-white ${
