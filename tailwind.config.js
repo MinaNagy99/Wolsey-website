@@ -11,6 +11,8 @@ module.exports = withMT({
         mainGray: "#F3F1EC",
         secondGray: "#EDEBE6",
       },
+      //HELLO MINA WHERE ARE YOU AND WHAT DO YOU DO AND HOW CAN I HELP YOU NPM RUN DEV NPM HELP ME TO FIND MY SELF WHAT IS LAUGH 
+      //
 
       fontFamily: {
         acumin: ['"Acumin Variable Concept"', "sans-serif"],

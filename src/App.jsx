@@ -14,28 +14,32 @@ import PrivacyPage from "./pages/PrivacyPage/PrivacyPage";
 import TermsPage from "./pages/TermsPage/TermsPage";
 import CareerPage from "./pages/CareerPage/CareerPage";
 import CareerModelProvider from "./context/careerContext";
+import ProjectsContextProvider from "./context/ProjectsContext";
+import ProjectPage from "./pages/ProjectsPage/ProjectPage";
 function App() {
   return (
     <>
       <NavbarContaxtProvider>
-        <CareerModelProvider>
-          <Layout>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/who-we-are" element={<WhoWeArePage />} />
-              <Route path="/management" element={<ManagementPage />} />
-              <Route
-                path="/certifications-and-awards"
-                element={<CertificationPage />}
-              />
-              <Route path="/portfolio" element={<PortfolioPage />} />
-              <Route path="/contact-us" element={<ContactUsPage />} />
-              <Route path="/privacy-policy" element={<PrivacyPage />} />
-              <Route path="/career" element={<CareerPage />} />
-              <Route path="/terms-conditions" element={<TermsPage />} />
-            </Routes>
-          </Layout>
-        </CareerModelProvider>
+        <ProjectsContextProvider>
+          <CareerModelProvider>
+            <Layout>
+              <Routes>
+                <Route path="/" element={<ProjectPage />} />
+                <Route path="/who-we-are" element={<WhoWeArePage />} />
+                <Route path="/management" element={<ManagementPage />} />
+                <Route
+                  path="/certifications-and-awards"
+                  element={<CertificationPage />}
+                />
+                <Route path="/portfolio" element={<PortfolioPage />} />
+                <Route path="/contact-us" element={<ContactUsPage />} />
+                <Route path="/privacy-policy" element={<PrivacyPage />} />
+                <Route path="/career" element={<CareerPage />} />
+                <Route path="/terms-conditions" element={<TermsPage />} />
+              </Routes>
+            </Layout>
+          </CareerModelProvider>
+        </ProjectsContextProvider>
       </NavbarContaxtProvider>
     </>
   );

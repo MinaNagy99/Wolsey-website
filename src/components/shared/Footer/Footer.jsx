@@ -19,7 +19,7 @@ function Footer() {
             <Link to="/terms-conditions">Terms & Conditions </Link>
           </p>
         </div>
-        <div className="md:col-span-3 col-span-1  justify-evenly  flex items-center">
+        <div className="md:col-span-3 col-span-1  justify-end  flex items-center">
           <SocialMedia />
         </div>
       </div>

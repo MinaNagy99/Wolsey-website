@@ -5,7 +5,7 @@ function Portfolio() {
   const data = {
     header: { text: "PORTOFOLIO", fontSize: "xl" },
     imgFirst: true,
-    img: { src: "/home/portofolio.webp", size: "contain" },
+    img: { src: "/home/portofolio.webp", size: "cover" },
     firstLine: {
       part1: {
         isBold: true,

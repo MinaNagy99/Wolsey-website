@@ -10,7 +10,9 @@ function CustomParagraph({ data }) {
     <>
       <div className={`${bgColor && bgColor}`}>
         {header && (
-          <h2 className={`text-mainBrown custom-text-${header.fontSize} mb-3`}>
+          <h2
+            className={`text-mainBrown font-berlin custom-text-${header.fontSize} mb-3`}
+          >
             {header.text}
           </h2>
         )}
