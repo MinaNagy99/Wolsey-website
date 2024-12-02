@@ -7,11 +7,12 @@ import {
 } from "@material-tailwind/react";
 
 export function ProjectCard({ project }) {
-  const { img, name, industry, subIndustry } = project;
+  const { img, name, industry, subIndustry, location, status, client } =
+    project;
   return (
     <Card
       shadow={false}
-      className="relative grid h-[40rem] w-full items-end justify-center overflow-hidden text-center"
+      className="relative grid h-[25rem] w-full items-end justify-center overflow-hidden text-center"
     >
       <CardHeader
         floated={false}
@@ -38,14 +39,16 @@ export function ProjectCard({ project }) {
           <span className="font-semibold text-gray-400">sub Industry: </span>{" "}
           {subIndustry}
         </Typography>
-
-        <Avatar
-          size="xl"
-          variant="circular"
-          alt="tania andrew"
-          className="border-2 border-white"
-          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-        />
+        <Typography variant="h5" className="mb-4 text-white  text-start">
+          <span className="font-semibold text-gray-400">Location:</span>{" "}
+          {location}
+        </Typography>
+        <Typography variant="h5" className="mb-4 text-white  text-start">
+          <span className="font-semibold text-gray-400">Status:</span> {status}
+        </Typography>
+        <Typography variant="h5" className="mb-4 text-white  text-start">
+          <span className="font-semibold text-gray-400">Client:</span> {client}
+        </Typography>
       </CardBody>
     </Card>
   );

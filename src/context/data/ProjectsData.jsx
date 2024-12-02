@@ -5,7 +5,17 @@ const projectsData = [
     industry: "engineering",
     subIndustry: "shcool",
     client: "BMW",
-    status: "pending",
+    status: "Pending",
+    location: "Egypt",
+  },
+  {
+    name: "hunday",
+    img: "/home/p1.webp",
+    industry: "engineering",
+    subIndustry: "marine",
+    client: "BMW",
+    status: "Pending",
+    location: "USA",
   },
   {
     name: "bmw",
@@ -13,7 +23,8 @@ const projectsData = [
     industry: "oil&gas",
     subIndustry: "shcool",
     client: "BMW",
-    status: "pending",
+    status: "Pending",
+    location: "Canada",
   },
   {
     name: "marcides",
@@ -21,7 +32,8 @@ const projectsData = [
     industry: "realState",
     subIndustry: "shcool",
     client: "marcides",
-    status: "pending",
+    status: "Pending",
+    location: "UK",
   },
   {
     name: "ferrary",
@@ -29,7 +41,8 @@ const projectsData = [
     industry: "education",
     subIndustry: "shcool",
     client: "ferrary",
-    status: "pending",
+    status: "Pending",
+    location: "UK",
   },
   {
     name: "lada",
@@ -37,7 +50,8 @@ const projectsData = [
     industry: "Structure",
     subIndustry: "shcool",
     client: "ferrary",
-    status: "pending",
+    status: "Pending",
+    location: "UK",
   },
   {
     name: "nissan",
@@ -45,7 +59,8 @@ const projectsData = [
     industry: "Structure",
     subIndustry: "shcool",
     client: "ferrary",
-    status: "pending",
+    status: "Pending",
+    location: "soudi",
   },
   {
     name: "lotus",
@@ -53,7 +68,8 @@ const projectsData = [
     industry: "education",
     subIndustry: "shcool",
     client: "ferrary",
-    status: "pending",
+    status: "Pending",
+    location: "USA",
   },
   {
     name: "lanos",
@@ -61,7 +77,8 @@ const projectsData = [
     industry: "Structure",
     subIndustry: "buildings",
     client: "ferrary",
-    status: "compeleted",
+    status: "Completed",
+    location: "UK",
   },
   {
     name: "ladaaa",
@@ -69,7 +86,8 @@ const projectsData = [
     industry: "realState",
     subIndustry: "villa",
     client: "ferrary",
-    status: "compeleted",
+    status: "Completed",
+    location: "UK",
   },
 ];
 
