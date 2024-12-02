@@ -24,7 +24,7 @@ function App() {
           <CareerModelProvider>
             <Layout>
               <Routes>
-                <Route path="/" element={<ProjectPage />} />
+                <Route path="/" element={<HomePage />} />
                 <Route path="/who-we-are" element={<WhoWeArePage />} />
                 <Route path="/management" element={<ManagementPage />} />
                 <Route
