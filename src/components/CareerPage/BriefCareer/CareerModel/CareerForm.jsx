@@ -62,8 +62,76 @@ function CareerForm() {
       const formdata = new FormData();
       const { firstName, lastName, position, phone, email, message, cv } =
         values;
-      console.log(values);
-
+        import React, { useContext } from "react";
+        import Select from "react-select";
+        import { projectContext } from "../../../../context/ProjectsContext";
+        
+        function SelectIndustry() {
+          const { term, setTerm, industryOptions } = useContext(projectContext);
+        
+          return (
+            <Select
+              styles={{
+                control: (baseStyles, state) => ({
+                  ...baseStyles,
+                  borderColor: state.isFocused ? "#864721" : "gray", // Border color on focus
+                  boxShadow: state.isFocused
+                    ? "0 25px 50px -12px rgba(134, 71, 33, 0.25), 0 10px 20px -6px rgba(134, 71, 33, 0.15)" // Stronger shadow
+                    : "none",
+                  transition: "box-shadow 0.3s ease, border-color 0.3s ease", // Slightly longer transition
+                }),
+                option: (baseStyles, state) => ({
+                  ...baseStyles,
+                  backgroundColor: state.isFocused ? "#864721" : "white",
+                  color: state.isFocused ? "white" : "black",
+                  cursor: "pointer",
+                }),
+                multiValue: (baseStyles) => ({
+                  ...baseStyles,
+                  backgroundColor: "#864721", // Background for selected options
+                }),
+                multiValueLabel: (baseStyles) => ({
+                  ...baseStyles,
+                  color: "white", // Text color of selected options
+                }),
+                multiValueRemove: (baseStyles) => ({
+                  ...baseStyles,
+                  color: "white", // Color of the remove icon
+                  cursor: "pointer",
+                  ":hover": {
+                    backgroundColor: "transparent", // Background when hovering over the remove icon
+                  },
+                }),
+              }}
+              isMulti
+              name="colors"
+              placeholder="Select Industry"
+              onChange={(data) => {
+                const value = data.map((d) => d.value);
+                setTerm({
+                  ...term,
+                  industry: { text: value },
+                });
+              }}
+              noOptionsMessage={"No options available"}
+              options={industryOptions}
+              theme={(theme) => ({
+                ...theme,
+                borderRadius: 0,
+                colors: {
+                  ...theme.colors,
+                  primary25: "#864721",
+                  primary: "#864721",
+                },
+              })}
+              className="basic-multi-select rounded-xl"
+              classNamePrefix="select"
+            />
+          );
+        }
+        
+        export default SelectIndustry;
+        
       formdata.append("firstName", firstName);
       formdata.append("lastName", lastName);
       formdata.append("position", position);

@@ -21,17 +21,14 @@ function ManagementPage() {
   };
   useEffect(() => {
     if (location.state?.scrollTo === "firstSection") {
-      console.log("first section");
 
       scrollToSection(firstSectionRef);
     }
     if (location.state?.scrollTo === "founder") {
-      console.log("founder");
 
       scrollToSection(founderRef);
     }
     if (location.state?.scrollTo === "engineers") {
-      console.log("engineer");
 
       scrollToSection(engineersRef);
     }

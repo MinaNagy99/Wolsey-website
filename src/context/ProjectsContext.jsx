@@ -46,8 +46,6 @@ function ProjectsContextProvider({ children }) {
           index === self.findIndex((t) => t.value === item.value)
       );
 
-    console.log();
-
     const uniqueYears = projects
       .map((p) => p.year)
       .sort()

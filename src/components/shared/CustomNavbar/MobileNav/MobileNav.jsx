@@ -32,8 +32,6 @@ function MobileNav() {
         {navbarList.map(({ name, list, path }, index) => (
           <div
             onClick={(e) => {
-              console.log("method navigate one ");
-
               e.stopPropagation();
               handleNavigate(path.page, path.section);
               setIsMenuOpen(false);
@@ -46,8 +44,7 @@ function MobileNav() {
               <i
                 onClick={(e) => {
                   e.stopPropagation();
-                  console.log("method visible");
-
+                  F;
                   if (visibleDropdownIndex == null) {
                     setVisibleDropdownIndex(index);
                   } else {
@@ -80,8 +77,6 @@ function MobileNav() {
                         e.stopPropagation();
                         handleNavigate(path.page, path.section);
                         setIsMenuOpen(false);
-
-                        console.log("navigate to spasifc list ");
                       }}
                     >
                       {name}

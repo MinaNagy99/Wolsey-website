@@ -22,7 +22,6 @@ function ProjectPage() {
   } = useContext(projectContext);
 
   useEffect(() => {
-    console.log("render project page");
     setTerm({
       name: { text: "" },
       client: { text: "" },

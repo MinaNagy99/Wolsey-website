@@ -23,7 +23,6 @@ function DesktopNav() {
           <div
             onClick={(e) => {
               e.stopPropagation();
-              console.log("method one");
 
               handleNavigate(path.page, path.section);
             }}
@@ -47,8 +46,7 @@ function DesktopNav() {
                   <React.Fragment key={itemIndex}>
                     <div
                       onClick={(e) => {
-                        console.log("method two");
-                        e.stopPropagation();
+F                        e.stopPropagation();
                         handleNavigate(path.page, path.section);
                       }}
                     >

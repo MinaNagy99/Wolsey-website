@@ -13,7 +13,6 @@ export default function CareerModal() {
 
   return (
     <>
-      {console.log(open)}
       <Dialog open={open} onClose={setOpen} className="relative z-10">
         <DialogBackdrop
           transition

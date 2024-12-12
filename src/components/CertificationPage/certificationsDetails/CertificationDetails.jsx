@@ -4,9 +4,7 @@ function CertificationDetails() {
   const [widthScreen, setWidthScreen] = useState();
   useEffect(() => {
     setWidthScreen(window.innerWidth);
-    console.log(widthScreen);
-  }, [widthScreen]);
-  const data = {};
+[]  }, [widthScreen]);
   return (
     <>
       <div className="bg-mainGray grid md:grid-cols-3 grid-cols-1  xl:gap-20 gap-10 xl:px-20 px-5 py-10">

@@ -11,9 +11,6 @@ function MultiSelect({ data, placeholder }) {
     if (data == "industry") {
       setOptions(industryOptions);
     } else {
-      console.log("here");
-      console.log(subIndustriesOptions);
-
       setOptions(subIndustriesOptions);
     }
   }, [options, term]);
