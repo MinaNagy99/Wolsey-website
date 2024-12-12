@@ -10,7 +10,8 @@ function TextWithBgImg({ data }) {
           backgroundImage: `url(${img.src})`,
           backgroundPosition: "right center",
           backgroundRepeat: "no-repeat",
-          backgroundSize: `${img.size}`,
+
+          backgroundSize: `100% 100%`,
         }}
         className="flex flex-col justify-center md:ps-11 ps-5 py-10"
       >

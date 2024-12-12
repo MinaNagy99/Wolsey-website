@@ -22,45 +22,71 @@ function NavbarContaxtProvider({ children }) {
 
   const navbarList = [
     {
-      name: "Who we are",
-      list: [
-        { name: "About Us", path: { page: "/who-we-are", section: "about" } },
-        { name: "Mission", path: { page: "/who-we-are", section: "mission" } },
-        { name: "Vision", path: { page: "/who-we-are", section: "vision" } },
-      ],
-      path: { page: "/who-we-are", section: "about" },
-    },
-    {
-      name: "Management team",
-      path: { page: "/management", section: "firstSection" },
+      name: "About",
       list: [
         {
-          name: "Founder's Experience and Vision",
-          path: { page: "/management", section: "founder" },
+          name: "Mission, Vision and Values",
+          path: { page: "/missionAndVision", section: "about" },
+        },
+        {
+          name: "Founder’s Journey",
+          path: { page: "/founder", section: "mission" },
+        },
+        {
+          name: "Certifications and Awards ",
+          path: { page: "/certifications-and-awards", section: "vision" },
+        },
+      ],
+      path: { page: "/about", section: "about" },
+    },
+    // {
+    //   name: "Management team",
+    //   path: { page: "/management", section: "firstSection" },
+    //   list: [
+    //     {
+    //       name: "Founder's Experience and Vision",
+    //       path: { page: "/management", section: "founder" },
+    //     },
+    //     ,
+    //     {
+    //       name: "Engineers and Technologists",
+    //       path: { page: "/management", section: "engineers" },
+    //     },
+    //     ,
+    //   ],
+    // },
+    {
+      name: "Services",
+      path: { page: "/services", section: "firstSection" },
+      list: [
+        {
+          name: "Structural Engineering Solutions",
+          path: { page: "/solutions", section: "founder" },
         },
         ,
         {
-          name: "Engineers and Technologists",
-          path: { page: "/management", section: "engineers" },
+          name: "Wolsey’s Sub-Industries",
+          path: { page: "/subIndustries", section: "engineers" },
         },
         ,
       ],
     },
     {
-      name: "Portfolio",
-      path: { page: "/portfolio", section: "engineers" },
-      list: [
-        {
-          name: "Our structural engineering solutions",
-          path: { page: "/portfolio", section: "solutions" },
-        },
-        { name: "Our Projects" },
-      ],
+      name: "Projects",
+      path: { page: "/projects", section: "firstSection" },
     },
-    {
-      name: "Certifications and awards",
-      path: { page: "/certifications-and-awards", section: "engineers" },
-    },
+    // {
+    //   name: "Portfolio",
+    //   path: { page: "/portfolio", section: "engineers" },
+    //   list: [
+    //     {
+    //       name: "Our structural engineering solutions",
+    //       path: { page: "/portfolio", section: "solutions" },
+    //     },
+    //     { name: "Our Projects" },
+    //   ],
+    // },
+
     {
       name: "Career opportunities",
       path: { page: "/career", section: "engineers" },

@@ -6,7 +6,7 @@ import WolseyInNumbers from "../../components/AboutPage/WolseyWithNumbers/Wolsey
 import TrustedBy from "../../components/shared/TrustedBy/TrustedBy";
 import { useLocation } from "react-router-dom";
 
-function WhoWeArePage() {
+function AboutPage() {
   const aboutRef = useRef();
   const missionRef = useRef();
   const visionRef = useRef();
@@ -32,21 +32,21 @@ function WhoWeArePage() {
   }, [location]);
   return (
     <>
-      <div className="mt-28">
+      <div className="md:mt-18 mt-10">
         <div ref={aboutRef}>
           <AboutSection />
         </div>
-        <div ref={missionRef}>
+        {/* <div ref={missionRef}>
           <Mission />
-        </div>
-        <div ref={visionRef}>
+        </div> */}
+        {/* <div ref={visionRef}>
           <Vision />
-        </div>
+        </div> */}
         <WolseyInNumbers />
-        <TrustedBy />
+        {/* <TrustedBy /> */}
       </div>
     </>
   );
 }
 
-export default WhoWeArePage;
+export default AboutPage;

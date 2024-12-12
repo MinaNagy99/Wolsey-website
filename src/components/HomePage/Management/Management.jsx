@@ -21,7 +21,7 @@ function Management() {
     normalText: [
       "in 2006 following a distinguished career collaborating with leading engineers on high-profile projects worldwide. In mid-2023, Wolsey Structural Engineering proudly joined Mosaic Holding Corporation as a subsidiary.",
     ],
-    learnMore: { path: "/who-we-are" },
+    learnMore: { path: "/founder" },
   };
   return (
     <>

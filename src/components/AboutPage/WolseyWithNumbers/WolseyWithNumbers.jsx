@@ -8,7 +8,7 @@ function WolseyInNumbers() {
   const numberData = [
     {
       name: "Years of expertise",
-      number: useCountUp(17, inView),
+      number: useCountUp(20, inView),
       icon: "+",
     },
     {
@@ -23,7 +23,7 @@ function WolseyInNumbers() {
     },
     {
       name: "Recurring clients",
-      number: useCountUp(40, inView, 4000),
+      number: useCountUp(95, inView, 4000),
       icon: "%",
     },
     {
@@ -33,7 +33,7 @@ function WolseyInNumbers() {
     },
     {
       name: "Projects",
-      number: useCountUp(3000, inView, 70000),
+      number: useCountUp(1000, inView, 70000),
       icon: "+",
     },
   ];

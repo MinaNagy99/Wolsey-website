@@ -9,22 +9,36 @@ import SelectIndustry from "../../components/ProjectsPage/Filteration/Select/Sel
 import SelectSubIndustry from "../../components/ProjectsPage/Filteration/Select/SelectSubIndustry";
 import SelectLocation from "../../components/ProjectsPage/Filteration/Select/SelectLocation";
 import { Filteration } from "../../components/ProjectsPage/Filteration/Filtertation";
+import { Pagination } from "../../components/ProjectsPage/pagination/pagination";
 
 function ProjectPage() {
   const {
     projects: originalProjects,
     projectFilter,
     filteredProjects,
+    paginationProjects,
     term,
     setTerm,
   } = useContext(projectContext);
 
   useEffect(() => {
+    console.log("render project page");
+    setTerm({
+      name: { text: "" },
+      client: { text: "" },
+      industry: { text: [] },
+      subIndustry: { text: [] },
+      year: { text: [] },
+      location: { text: [] },
+      status: { text: "" },
+    });
+  }, []);
+  useEffect(() => {
     projectFilter(term);
   }, [term, originalProjects]);
   return (
     <>
-      <div className="mt-24 lg:px-20 px-8">
+      <div className="md:mt-20 mt-8 lg:px-20 px-8">
         <h1 className="text-mainBrown custom-text-xxl font-berlin text-center">
           Projects
         </h1>
@@ -35,7 +49,7 @@ function ProjectPage() {
         <div className="flex justify-center">
           <div className="space-x-8"></div>
         </div>
-        <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-5">
+        <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-5">
           {filteredProjects.map((project, index) => {
             return (
               <React.Fragment key={index}>
@@ -46,6 +60,9 @@ function ProjectPage() {
             );
           })}
         </div>
+        {/* <div className="my-5 m-auto">
+          <Pagination />
+        </div> */}
       </div>
     </>
   );

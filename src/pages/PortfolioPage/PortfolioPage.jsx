@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import PortfolioPoster from "../../components/PortfolioPage/PortfolioPoster/PortfolioPoster";
 import Industries from "../../components/PortfolioPage/Industries/Industries";
 import Projects from "../../components/PortfolioPage/Projects/Projects";
-import Solutions from "../../components/PortfolioPage/Solutions/Solutions";
+import Solutions from "../../components/Solutions/solutionSection/Solutions";
 import { useLocation } from "react-router-dom";
 
 function PortfolioPage() {

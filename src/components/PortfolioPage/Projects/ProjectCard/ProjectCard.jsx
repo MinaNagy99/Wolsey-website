@@ -10,7 +10,11 @@ function ProjectCard({ data }) {
         {imgFirst ? (
           <>
             <div className=" col-span-2">
-              <img className="w-full  object-cover h-full " src={img} alt="" />
+              <img
+                className="w-full  object-cover h-full "
+                src={img[0]}
+                alt=""
+              />
             </div>
             <div
               className={`md:col-span-4 col-span-1 flex flex-col justify-center md:ps-11 ps-5 py-10 bg-${bgColor}`}

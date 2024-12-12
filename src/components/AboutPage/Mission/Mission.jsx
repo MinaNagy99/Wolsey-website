@@ -4,7 +4,7 @@ import TextWithImg from "../../shared/TextWithImg/TextWithImg";
 function Mission() {
   const data = {
     header: { text: "MISSION", fontSize: "xl" },
-    imgFirst: true,
+    imgFirst: false,
     bgColor: "secondGray",
     img: "/about/mission.webp",
     firstLine: {
@@ -20,7 +20,7 @@ function Mission() {
       },
     },
     normalText: [
-      "designs combining innovation, sustainability, and technical precision. Through a client-centric, collaborative approach, we strive to exceed expectations by providing cost-effective, eco-conscious and highly efficient engineering solutions. Our mission is to foster a resilient and sustainable future, ensuring every project has the highest standards of safety, quality, and environmental responsibility.",
+      "Wolsey Structural Engineering is committed to delivering world-class structural designs providing  innovative, sustainable, and precise designs. Our client-focused approach ensures cost-effective solutions that exceed expectations while prioritizing safety, quality, and environmental responsibility.",
     ],
   };
   return (

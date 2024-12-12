@@ -10,7 +10,7 @@ function CertificationPage() {
       <CertificationPoster />
       <CertificationDetails />
       <WolseyInNumbers />
-      <TrustedBy />
+      {/* <TrustedBy /> */}
     </>
   );
 }

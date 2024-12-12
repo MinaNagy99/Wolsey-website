@@ -23,28 +23,29 @@ function CertificationDetails() {
             2012
           </p>
           <p className="font-bold my-2 ">
-            Canadian Architect Award of Excellence, 2017 (BV20 multi-family
-            project, Calgary
+            The Alberta Masonry Design Award of Merit for Structural Masonry in
+            the Commercial Building category, 2012 ( 718 8th Avenue SW office
+            building, Calgary)
           </p>
-          <p className="my-2">
+          {/* <p className="my-2">
             Wolsey Structural Engineering’s design for the 718 8th Avenue SW
             office in Calgary—a four-story, 24,400-square-foot building
             completed in 2012—won the Alberta Masonry Design Award of Merit,
             showcasing its structural integrity for professional and tech firms.
-          </p>
+          </p> */}
         </div>
         <div className="col-span-1 p-8 md:p-0">
           {widthScreen > 720 ? (
             <>
               <p className="font-bold my-2 ">
-                Canadian Architect Award of Excellence, 2017 (BV20 multi-family
-                project, Calgary
+                Canadian Architect Award of Excellence, 2017. (V20 multi-family
+                project, Calgary)
               </p>
-              <p className="my-2">
+              {/* <p className="my-2">
                 The 19,450-square-foot BV20 multi-family project in Calgary
                 features sustainable design has won the Canadian Architect Award
                 of Excellence in 2017.
-              </p>
+              </p> */}
               <p className="custom-text-xxl font-bold py-2 my-4 bg-mainBrown  text-white text-center">
                 2017
               </p>
@@ -66,8 +67,9 @@ function CertificationDetails() {
                 2017
               </p>
               <p className="font-bold my-2 ">
-                Canadian Architect Award of Excellence, 2017 (BV20 multi-family
-                project, Calgary
+                The Alberta Masonry Design Award of Merit for excellence in
+                Landscape urban design and planning, 2019 (Mount Royal Retaining
+                Wall, Calgary)
               </p>
               <p className="my-2">
                 The 19,450-square-foot BV20 multi-family project in Calgary
@@ -93,11 +95,11 @@ function CertificationDetails() {
             Canadian Architect Award of Excellence, 2017 (BV20 multi-family
             project, Calgary
           </p>
-          <p className="my-2">
+          {/* <p className="my-2">
             The 1880s Mount Royal Retaining Wall restoration, using local
             sandstone and lime mortar, won the 2019 Alberta Masonry Design
             Award.
-          </p>
+          </p> */}
         </div>
       </div>
     </>

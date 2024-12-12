@@ -4,7 +4,7 @@ import TextWithImg from "../../shared/TextWithImg/TextWithImg";
 function Vision() {
   const data = {
     header: { text: "VISSION", fontSize: "xl" },
-    imgFirst: false,
+    imgFirst: true,
     bgColor: "mainGray",
     img: "/about/vision.webp",
     firstLine: {
@@ -20,7 +20,7 @@ function Vision() {
       },
     },
     normalText: [
-      "shaping the future of-the-built environment through pioneering, sustainable, and aesthetically compelling solutions that redefine modern construction.",
+      "To be a vanguard in structural engineering, shaping the future of the built environment through pioneering sustainable and aesthetically compelling and constructible solutions that redefine modern construction.",
     ],
   };
   return (
