@@ -21,11 +21,11 @@ export function Filteration() {
   }, [term, originalProjects]);
   return (
     <>
-      <div className="grid gap-6 grid-cols-6 my-5">
+      <div className="grid gap-2 grid-cols-6 my-5 m-auto md:w-1/2">
         <div className="lg:col-span-6 sm:col-span-3 col-span-6">
           <div className=" m-auto ">
             <Input
-              className=" !border-gray-700  !border !rounded-none bg-white text-gray-900   placeholder:text-gray-700 placeholder:opacity-80  focus:!border-mainBrown focus:!shadow-md focus:!border-2 focus:!shadow-mainBrown "
+              className=" !border-gray-700  !border !rounded-none bg-white text-gray-900   placeholder:text-gray-700 placeholder:opacity-80  focus:!border-mainBrown focus:!shadow-md focus: focus:!shadow-mainBrown "
               labelProps={{
                 className: "hidden",
               }}
@@ -55,7 +55,7 @@ export function Filteration() {
         </div>
         <div className="lg:col-span-2 sm:col-span-3 col-span-6">
           <Input
-            className=" !border-gray-700 shadow- shadow-mainBrown !border !rounded-none  bg-white text-gray-900   placeholder:text-gray-700 placeholder:opacity-80  focus:!border-mainBrown focus:!shadow-md focus:!border-2 focus:!shadow-mainBrown "
+            className=" !border-gray-700 shadow- shadow-mainBrown !border !rounded-none  bg-white text-gray-900   placeholder:text-gray-700 placeholder:opacity-80  focus:!border-mainBrown focus:!shadow-md focus: focus:!shadow-mainBrown "
             labelProps={{
               className: "hidden",
             }}

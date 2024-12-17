@@ -1,5 +1,6 @@
 import React from "react";
 import LearnMore from "../../shared/LearnMore";
+import { Link } from "react-router-dom";
 
 function FirstSection() {
   return (
@@ -19,7 +20,7 @@ function FirstSection() {
             responsibility to create resilient, future-focused structures that
             set new industry standards and enrich communities.
           </p>
-          <LearnMore />
+          <LearnMore path="/about" />
         </div>
       </div>
       {/* <img src="/home/firstSection.webp" alt="" /> */}

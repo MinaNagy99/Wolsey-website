@@ -5,6 +5,7 @@ import SliderOfImgsProject from "../../components/ProjectDetails/sliderOfImgsPro
 
 function ProjectsDetailsPage() {
   const { slug } = useParams();
+
   const project = projectsData.filter((p) => p.slug == slug)[0];
   const {
     description,
@@ -19,11 +20,11 @@ function ProjectsDetailsPage() {
   } = project;
   return (
     <>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-2">
         <div className="lg:col-span-1 col-span-3 mt-20 p-10">
           <h1 className="text-mainBrown font-bold custom-text-xl">{name}</h1>
           <p className="italic custom-text-xl font-berlin"> [{industry}]</p>
-          <div className="p-14 ps-10">
+          <div className="p-14 ps-0">
             <p className="my-1">
               <span className="font-bold font-berlin:">SUB INDUSTRY/</span>{" "}
               {subIndustry}
@@ -50,7 +51,7 @@ function ProjectsDetailsPage() {
           ))}
           <p></p>
         </div>
-        <div className="lg:col-span-2 col-span-3">
+        <div className="lg:col-span-1 col-span-3">
           <SliderOfImgsProject imgs={imgs} />
         </div>
       </div>

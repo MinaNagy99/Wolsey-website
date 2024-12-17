@@ -36,12 +36,10 @@ function AboutPage() {
         <div ref={aboutRef}>
           <AboutSection />
         </div>
-        {/* <div ref={missionRef}>
-          <Mission />
-        </div> */}
-        {/* <div ref={visionRef}>
-          <Vision />
-        </div> */}
+    
+
+
+
         <WolseyInNumbers />
         {/* <TrustedBy /> */}
       </div>

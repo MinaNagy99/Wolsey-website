@@ -11,7 +11,7 @@ function HomePage() {
       <FirstSection />
       <WolseyInNumbers />
       <Management />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <ProjectSlider />
     </>
   );

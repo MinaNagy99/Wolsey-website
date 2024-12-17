@@ -3,8 +3,8 @@ import React from "react";
 function BriefCareer() {
   return (
     <>
-      <div className="grid grid-cols-5 ">
-        <div className=" lg:col-span-2 col-span-5 w-full ps-3  py-5">
+      <div className="grid grid-cols-5 py-10 md:px-10 ">
+        <div className=" lg:col-span-4 col-span-5 w-full ps-3  py-5">
           <p className="font-semibold custom-text-lg mb-3">Inspire, Innovate, Achieve:</p>
           <p>
             Joining Wolsey means becoming part of an elite network of
@@ -17,7 +17,7 @@ function BriefCareer() {
           </p>
         </div>
 
-        <div className="col-span-5 my-2 ps-3">
+        <div className="lg:col-span-4 col-span-5 my-2 ps-3">
           <p>
             Whether you’re a seasoned engineer, strategic business leader, or
             finance expert, Wolsey offers a wide range of fulfilling career
@@ -27,7 +27,7 @@ function BriefCareer() {
             capabilities, strengthening our impact across diverse fields.
           </p>
         </div>
-        <div className="col-span-5 my-2 ps-3">
+        <div className="lg:col-span-4 col-span-5 my-2 ps-3">
           <p>
             Whether you’re a seasoned engineer, strategic business leader, or
             finance expert, Wolsey offers a wide range of fulfilling career

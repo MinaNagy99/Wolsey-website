@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 export function ProjectCard({ project }) {
+
   const { imgs, name, slug } = project;
   return (
     <Link to={`/projects/${slug}`}>

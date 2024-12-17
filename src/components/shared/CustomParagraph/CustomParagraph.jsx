@@ -6,20 +6,7 @@ function CustomParagraph({ data }) {
     data;
   const { part1, part2 } = firstLine;
 
-/****
- 
-i'm very tired to do any thing to day but should ikiklikliklllikklkiklkkiklkkikll
 
-
-jsdfljdoikklkkkkkkdkdkkdkdkdokdokdodokdokdokdokdokdokdokooooooooioikddfdflkdokdfdfklfomdfdfokdfokmdfdfdfflofdfdffwjww
-whagt is thew  kjdhjoulf dhjulddhjjdfggkljfdgiijsfgiojkdfijj;jjjjjjgigiejggijkjiklkjijllkjikkljiklkjiklkjiklkijklikkjiklkijkl
-
-
-  kdfjkdfkjlkkkdfjddlokoojijjjjjijijikklkiliijkjikjikjiikjijjjjjjjjjjj 
-  jjdfkjdfjskdffjksddfjksdjkddfjkdsdjdfjjfjfjfjfjff'ff'f
-  f
-  fjfjfhfksskijkikieieoeieurroepeierieoepwpwoeriepoeoeoeooeoooeoeoeooeooeoeoeoeoeoeoeoeeoeooeoeooeoeooeeooooeoeoeoeoeoeoek
- */
   return (
     <>
       <div className={`${bgColor && bgColor}`}>
