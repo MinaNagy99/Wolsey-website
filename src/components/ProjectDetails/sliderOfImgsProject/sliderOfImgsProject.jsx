@@ -9,7 +9,7 @@ function SliderOfImgsProject({ imgs }) {
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 1500, // Set the autoplay speed to 1 second (1000 ms)
-    fade: true, // Enable fade effect
+    fade: true, 
   };
   return (
     <>

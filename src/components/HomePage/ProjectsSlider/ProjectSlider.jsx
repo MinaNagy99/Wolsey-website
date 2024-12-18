@@ -36,9 +36,9 @@ function ProjectSlider({ data }) {
         <Slider {...settings}>
           {images.map(({ src, width }, index) => (
             <React.Fragment key={index}>
-              <div style={{ width }} className="h-[418px]">
+              <div style={{ width }} className="h-[318px]">
                 <img
-                  className="w-full h-full border-4 border-white"
+                  className="w-full border-4 border-white"
                   src={src}
                   alt=""
                 />

@@ -13,7 +13,7 @@ function FirstSection() {
             </span>{" "}
             Founded in 2006, Wolsey Structural Engineering
           </p>
-          <p>
+          <p className="text-justify">
             delivers innovative, sustainable solutions across diverse sectors,
             with over 3,000 projects completed worldwide. Backed by 20+ skilled
             engineers, Wolsey combines precision and environmental
