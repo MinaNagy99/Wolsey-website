@@ -6,7 +6,7 @@ function MainServices() {
     "./services/2.png",
     "./services/3.png",
     "./services/4.png",
-    "./services/5.png",
+    // "./services/5.png",
     "./services/6.png",
     "./services/7.png",
   ];
@@ -16,7 +16,7 @@ function MainServices() {
         MAIN SERVICES
       </h1>
       <div className="map md:h-[60vh] flex items-center">
-        <div className="grid md:grid-cols-7 grid-cols-2 lg:px-20 items-center justify-center ">
+        <div className="grid md:grid-cols-6 grid-cols-2 lg:px-20 items-center justify-center ">
           {services.map((img, index) => (
             <React.Fragment key={index}>
               <div className="col-span-1 flex items-center justify-center">

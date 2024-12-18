@@ -3,7 +3,7 @@ import React from "react";
 function BriefCareer() {
   return (
     <>
-      <div className="grid grid-cols-5 py-10 md:px-10 text-justify">
+      <div className="grid grid-cols-5 py-10 md:px-10 ">
         <div className=" lg:col-span-4 col-span-5 w-full ps-3  py-5">
           <p className="font-semibold custom-text-lg mb-3">Inspire, Innovate, Achieve:</p>
           <p>

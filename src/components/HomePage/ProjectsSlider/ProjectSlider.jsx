@@ -32,13 +32,13 @@ function ProjectSlider({ data }) {
       <p className="text-mainBrown custom-text-xl text-center mt-10">
         Award winning projects
       </p>
-      <div className="slider-container  mt-2 mx-0 overflow-hidden">
+      <div className="slider-container  mt-2 mx-0 overflow-hidden mb-8 ">
         <Slider {...settings}>
           {images.map(({ src, width }, index) => (
             <React.Fragment key={index}>
-              <div style={{ width }} className="h-[318px]">
+              <div style={{ width }} className="h-[318px] ">
                 <img
-                  className="w-full border-4 border-white"
+                  className=" border-4 object-cover object-top   border-white"
                   src={src}
                   alt=""
                 />

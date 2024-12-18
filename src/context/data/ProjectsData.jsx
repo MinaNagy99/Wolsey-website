@@ -9,7 +9,7 @@ const projectsData = [
       "/projects/Aqsarniit Hotel and Conference Centre/2.webp",
       "/projects/Aqsarniit Hotel and Conference Centre/3.webp",
       "/projects/Aqsarniit Hotel and Conference Centre/4.webp",
-      "/projects/Aqsarniit Hotel and Conference Centre/5.webp",
+
     ],
     industry: "Engineering",
     subIndustry: "Residential - Modular Str.",
@@ -49,8 +49,7 @@ const projectsData = [
     slug: slugify("Herns Mill Historic Covered Bridge"),
     imgs: [
       "/projects/Herns Mill Historic Covered Bridge/1.webp",
-      "/projects/Herns Mill Historic Covered Bridge/2.webp",
-      "/projects/Herns Mill Historic Covered Bridge/3.webp",
+
     ],
     industry: "Engineering",
     subIndustry: "Specialty Fabrications",
@@ -65,7 +64,7 @@ const projectsData = [
   {
     name: "Latitude 51",
     slug: slugify("Latitude 51"),
-    imgs: ["/projects/Latitude 51/1.webp", "/projects/Latitude 51/2.webp"],
+    imgs: ["/projects/Latitude 51/1.webp"],
     industry: "Engineering",
     subIndustry: "Residential",
     client: "Shane Homes - IBI Group",
@@ -121,7 +120,7 @@ const projectsData = [
       "/projects/Skyview Ranch/2.webp",
       "/projects/Skyview Ranch/3.webp",
       "/projects/Skyview Ranch/4.webp",
-      "/projects/Skyview Ranch/5.webp",
+
     ],
     industry: "Engineering",
     subIndustry: "Residential- Mixed Use",
@@ -156,7 +155,6 @@ const projectsData = [
       "/projects/Warman Home Centre Communiplex/2.webp",
       "/projects/Warman Home Centre Communiplex/3.webp",
       "/projects/Warman Home Centre Communiplex/4.webp",
-      "/projects/Warman Home Centre Communiplex/5.webp",
     ],
     industry: "Engineering",
     subIndustry: "Commercial",

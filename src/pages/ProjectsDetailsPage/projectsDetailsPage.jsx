@@ -23,24 +23,24 @@ function ProjectsDetailsPage() {
       <div className="grid grid-cols-2">
         <div className="lg:col-span-1 col-span-3 mt-20 p-10">
           <h1 className="text-mainBrown font-bold custom-text-xl">{name}</h1>
-          <p className="italic custom-text-xl font-berlin"> [{industry}]</p>
+          <p className=" custom-text-xl font-berlin"> {industry}</p>
           <div className="p-14 ps-0">
             <p className="my-1">
-              <span className="font-bold font-berlin:">SUB INDUSTRY/</span>{" "}
+              <span className="font-bold font-berlin:">SUB INDUSTRY:</span>{" "}
               {subIndustry}
             </p>
             <p className="my-1">
-              <span className="font-bold font-berlin:">CLIENT/</span> {client}
+              <span className="font-bold font-berlin:">CLIENT:</span> {client}
             </p>
             <p className="my-1">
-              <span className="font-bold font-berlin:">LOCATION/</span>{" "}
+              <span className="font-bold font-berlin:">LOCATION:</span>{" "}
               {location}
             </p>
             <p className="my-1">
-              <span className="font-bold font-berlin:">STATUS/</span> {status}
+              <span className="font-bold font-berlin:">STATUS:</span> {status}
             </p>
             <p className="my-1">
-              <span className="font-bold font-berlin:">YEAR/</span> {year}
+              <span className="font-bold font-berlin:">YEAR:</span> {year}
             </p>
           </div>
           <p className="mb-3">[DESCRIPTION]</p>
@@ -51,7 +51,7 @@ function ProjectsDetailsPage() {
           ))}
           <p></p>
         </div>
-        <div className="lg:col-span-1 col-span-3">
+        <div className="lg:col-span-1 col-span-3 pt-24 contain-content md:pe-10">
           <SliderOfImgsProject imgs={imgs} />
         </div>
       </div>

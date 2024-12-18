@@ -22,7 +22,7 @@ function ServicesBrief() {
               Structural Engineering Solution
             </span>
           </h2>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 text-justify">
             <p className={` custom-text-base mb-3 `}>
               With a legacy of over 1,000 projects spanning four continents,
               ADAL’s portfolio exemplifies a steadfast commitment to innovation,
