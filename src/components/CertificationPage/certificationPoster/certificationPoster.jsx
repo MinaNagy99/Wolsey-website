@@ -14,7 +14,7 @@ function CertificationPoster() {
               we set new standards in structural engineering
             </span>
           </p>
-          <p className="mt-5 lg:w-1/2 text-justify">
+          <p className="mt-5 lg:w-1/2 lg:pe-6 text-justify">
             backed by over 20 years of expertise and a team of 20+ skilled
             design engineers. With a portfolio spanning 1000+ projects across 5
             continents, we bring sustainable, award-winning designs to life
