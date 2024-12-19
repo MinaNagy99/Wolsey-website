@@ -10,7 +10,7 @@ function ProjectSlider({ data }) {
     { src: "/home/p4.webp", width: 600 },
     { src: "/home/p5.webp", width: 420 },
     { src: "/home/p6.webp", width: 600 },
-    { src: "/home/p7.webp", width: 420 },
+    // { src: "/home/p7.webp", width: 420 },
   ];
   const [isMobile, setIsMobil] = useState(window.innerWidth <= 768);
 

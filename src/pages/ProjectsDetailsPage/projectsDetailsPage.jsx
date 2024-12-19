@@ -43,7 +43,7 @@ function ProjectsDetailsPage() {
               <span className="font-bold font-berlin:">YEAR:</span> {year}
             </p>
           </div>
-          <p className="mb-3">[DESCRIPTION]</p>
+          {/* <p className="mb-3">[DESCRIPTION]</p> */}
           {description.map((d, index) => (
             <p className="my-3 text-sm" key={index}>
               {d}
