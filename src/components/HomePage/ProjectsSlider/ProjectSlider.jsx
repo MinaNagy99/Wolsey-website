@@ -7,6 +7,10 @@ function ProjectSlider({ data }) {
     { src: "/home/p1.webp", width: 420 },
     { src: "/home/p2.webp", width: 600 },
     { src: "/home/p3.webp", width: 420 },
+    { src: "/home/p4.webp", width: 600 },
+    { src: "/home/p5.webp", width: 420 },
+    { src: "/home/p6.webp", width: 600 },
+    { src: "/home/p7.webp", width: 420 },
   ];
   const [isMobile, setIsMobil] = useState(window.innerWidth <= 768);
 
@@ -38,7 +42,7 @@ function ProjectSlider({ data }) {
             <React.Fragment key={index}>
               <div style={{ width }} className="h-[318px] ">
                 <img
-                  className=" border-4 object-cover object-top   border-white"
+                  className=" border-4 object-cover object-top  h-full w-full   border-white"
                   src={src}
                   alt=""
                 />
