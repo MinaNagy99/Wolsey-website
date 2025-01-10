@@ -25,7 +25,7 @@ function ServicesBrief() {
           <div className="md:w-1/2 text-justify">
             <p className={` custom-text-base mb-3 `}>
               With a legacy of over 1,000 projects spanning four continents,
-              ADAL’s portfolio exemplifies a steadfast commitment to innovation,
+              Wolsey's portfolio exemplifies a steadfast commitment to innovation,
               precision, and excellence. Our work transcends boundaries,
               encompassing a diverse range of sectors, from visionary master
               planning and transformative urban designs to iconic cultural
@@ -35,7 +35,7 @@ function ServicesBrief() {
             <p className={` custom-text-base mb-3 `}>
               Every project integrates functionality, aesthetic sophistication,
               and sustainable design principles, ensuring lasting impact and
-              relevance in a rapidly evolving global landscape. At ADAL, we are
+              relevance in a rapidly evolving global landscape. At Wolsey, we are
               dedicated to shaping communities and redefining spaces with
               designs that inspire, connect, and endure.
             </p>
