@@ -11,13 +11,14 @@ function SubIndustries() {
         part1: {
           isBold: true,
           color: "text-mainBrown",
-          text: "MULTIFAMILY",
+          text: "MULTIFAMILY RESIDENTIAL",
           fontSize: "xl",
         },
       },
       normalText: [
-        " Wolsey expertly designs and engineers multifamily structures that harmonise durability with aesthetic appeal, creating cohesive living spaces that meet diverse residential needs. Our approach ensures high-quality, sustainable solutions that support both structural integrity and community growth.",
+        "Wolsey delivers robust structural engineering solutions for multifamily residential buildings, ensuring durability, stability, and compliance with industry standards while supporting sustainable community growth.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: false,
@@ -32,8 +33,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "Our team specialises in developing retail environments that embody brand identity while optimising space functionality and customer experience. With a focus on structural innovation, we deliver commercial designs that are both efficient and visually impactful",
+        "Our team specializes in engineering structurally efficient retail spaces, prioritizing stability, durability, and adaptability. By integrating advanced structural systems and optimizing load-bearing designs, we create commercial environments that support functionality, enhance usability, and meet the unique demands of retail operations.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: true,
@@ -48,8 +50,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "Wolsey’s engineering solutions for office warehouse projects blend adaptability with robust structural design, tailored to support dynamic business operations. We prioritise flexibility and scalability, ensuring each facility meets the evolving demands of today’s workspaces.",
+        "Wolsey's structural engineering expertise for office warehouse projects focuses on creating durable, efficient frameworks designed to withstand operational demands. Our solutions emphasize load-bearing capacity, optimal material use, and structural integrity, ensuring the facilities are adaptable, scalable, and built to support diverse business requirements.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: false,
@@ -64,8 +67,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "We design dealership structures that emphasise a seamless integration of style and function, showcasing inventory in a space that enhances client engagement and brand presence. Our team’s expertise ensures these spaces are not only visually compelling but also structurally optimised for high-traffic use.",
+        "We engineer dealership structures with a focus on robust and efficient designs that support high-traffic use while meeting the unique demands of automotive showrooms. By prioritizing structural integrity and functionality, we create spaces that optimize the display of inventory and enhance client engagement, all while upholding the highest standards of durability and performance.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: true,
@@ -80,8 +84,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "With a commitment to precision and creativity, Wolsey’s specialty fabrication services transform unique client visions into engineered reality. Our approach combines advanced engineering with meticulous attention to detail, delivering custom solutions that stand out for their innovation and quality.",
+        "It  involves the custom design and construction of critical structural components like beams, supports, and frames. This process ensures each element meets precise specifications, integrates seamlessly with the overall design, and complies with safety and regulatory standards, providing strength, durability, and reliability for complex projects.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: false,
@@ -96,8 +101,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "Wolsey brings deep expertise to the structural needs of municipal projects, developing facilities that serve public interests with lasting durability and civic pride. Our work with municipal institutions reflects our dedication to creating functional, resilient structures that benefit communities.",
+        "Our municipal institution is engineered for durability and safety, focusing on robust structural integrity. We apply advanced engineering methods to ensure long-lasting, resilient spaces that meet the needs of the community, using sustainable materials and innovative design solutions.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: true,
@@ -112,8 +118,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "Our landscape structural solutions enhance outdoor spaces, blending seamlessly with natural surroundings to support both aesthetics and utility. We apply sustainable practices to create structures that endure, adding lasting value to any environment.",
+        "Landscape elements involve the engineering of functional outdoor structures such as retaining walls, walkways, terraces, and stairs. Our approach ensures these features are structurally sound, stable, and sustainable, while complementing the natural environment.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: false,
@@ -128,8 +135,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "Wolsey’s modular structure designs emphasise flexibility, efficiency, and fast-track construction to meet modern demands. Each project balances innovation with practicality, allowing for modular configurations that offer durable and adaptable solutions.",
+        "Modular structures are prefabricated building components engineered for strength, durability, and efficiency. Designed with precision, these structures offer rapid assembly while maintaining high standards of load-bearing capacity and resilience to environmental conditions. Ideal for various applications, modular systems provide flexible, reliable solutions tailored to specific engineering requirements.",
       ],
+      link: "/projects",
     },
     {
       imgFirst: true,
@@ -144,8 +152,9 @@ function SubIndustries() {
         },
       },
       normalText: [
-        "We design single-family residential structures with a focus on both structural integrity and personal comfort, tailored to meet the unique needs of each client. By combining meticulous engineering with a collaborative approach, Wolsey creates homes that reflect quality and timelessness.",
+        "Our structural engineering services for single-family homes focus on safety, durability, and precision. We design and analyze load-bearing systems, ensuring compliance with building codes and optimizing stability. From foundations to framing, our tailored solutions deliver reliable, long-lasting structures.",
       ],
+      link: "/projects",
     },
   ];
   return (
